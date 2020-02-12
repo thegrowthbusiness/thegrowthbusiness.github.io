@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="1" y1="0.5" x2="0" y2="0.5" id="gradient_1">
+      <stop offset="0" stop-color="#F8B27E" />
+      <stop offset="1" stop-color="#F6CD70" />
+    </linearGradient>
+  </defs>
+  <path d="M35.6179 15.1332L38.9516 19.4758L35.5302 23.7745L36.2759 29.1698L31.1876 31.2315L29.1698 36.3197L23.7745 35.5741L19.4319 38.9077L15.0894 35.5741L9.69404 36.3197L7.67628 31.2315L2.588 29.2137L3.3337 23.8184L0 19.4758L3.37756 15.0894L2.63187 9.69404L7.72014 7.67628L9.7379 2.588L15.1332 3.3337L19.4758 0L23.8622 3.37756L29.2576 2.63187L31.2753 7.72014L36.3636 9.7379L35.6179 15.1332ZM11.4048 20.4408L17.8967 25.7923L27.5469 14.6069L25.88 13.1593L17.6335 22.6779L12.8084 18.7301L11.4048 20.4408Z" id="Shape" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+</svg>

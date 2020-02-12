@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Quiz</title>
+
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/main.min.css">
+  <!--[if lte IE 9]>
+    <link href="stylesheets/non-responsive.css" rel="stylesheet" />
+  <![endif]-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <div id="browser-notification" class="alert alert-danger">
+      <div class="container">
+        We are sorry but it looks like your <a href="http://www.whatbrowser.org/intl/en_us/" target=_blank>browser</a> doesn't support our website features. In order to get the full experience please download a new version of <a title="Download Chrome" href="http://www.google.com/chrome/" target=_blank>Chrome</a>, <a title="Download Safari" href="http://www.apple.com/safari/download/" target=_blank>Safari</a>, <a title="Download Firefox" href="http://www.mozilla.com/firefox/" target=_blank>Firefox</a>, or <a title="Download Internet Explorer" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target=_blank>Internet Explorer</a>.
+      </div>
+    </div>
+  <![endif]-->
+
+  <header class="header-quiz">
+    <nav class="navbar navbar-expand-md">
+      <div class="container container-quiz">
+        <a href="homepage.html" class="navbar-brand"><img src="../assets/images/logo.png" class='logo-img' alt="" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="quiz">
+    <div class="section-choice">
+      <div class="container container-quiz">
+        <div class="progress-line-wrapper">
+          <div class="line-holder">
+            <div class="line-text-holder">
+              <p class="line-text title-text">Body</p>
+              <img src="../assets/images/quiz/quiz-check-green.png" class="line-check" alt="" />
+            </div>
+            <div class="line-progress">
+              <div class="percent percent-green"></div>
+            </div>
+          </div>
+          <div class="line-holder">
+            <div class="line-text-holder">
+              <p class="line-text title-text">Mind</p>
+            </div>
+            <div class="line-progress">
+              <div class="percent percent-orange"></div>
+            </div>
+          </div>
+          <div class="line-holder">
+            <div class="line-text-holder">
+              <p class="line-text title-text">Heart</p>
+            </div>
+            <div class="line-progress">
+              <div class="percent percent-yellow"></div>
+            </div>
+          </div>
+          <div class="line-holder">
+            <div class="line-text-holder">
+              <p class="line-text title-text">Soul</p>
+            </div>
+            <div class="line-progress">
+              <div class="percent percent-pink"></div>
+            </div>
+          </div>
+        </div>
+        <p class="choice-title title-text">Which best describes how you feel about your body?</p>
+        <form class="form-choice">
+          <div class="choice-wrapper">
+            <div class="choice-holder">
+              <input class="toggle-choice" type="radio" name="choice" value="choice-1" />
+              <div class="choice-items js-toggle-choice">
+                <p class="choice-text">It feels free flowing</p>
+                <img src="../assets/images/quiz/quiz-check.png" class="choice-check" alt="" />
+              </div>
+            </div>
+            <div class="choice-holder">
+              <input class="toggle-choice" type="radio" name="choice" value="choice-2" />
+              <div class="choice-items js-toggle-choice">
+                <p class="choice-text">I often feel stiff</p>
+                <img src="../assets/images/quiz/quiz-check.png" class="choice-check" alt="" />
+              </div>
+            </div>
+            <div class="choice-holder">
+              <input class="toggle-choice" type="radio" name="choice" value="choice-3" />
+              <div class="choice-items js-toggle-choice">
+                <p class="choice-text">I experience pain regularly</p>
+                <img src="../assets/images/quiz/quiz-check.png" class="choice-check" alt="" />
+              </div>
+            </div>
+            <div class="choice-holder">
+              <input class="toggle-choice" type="radio" name="choice" value="choice-4" />
+              <div class="choice-items js-toggle-choice">
+                <p class="choice-text">I'm ready for anything</p>
+                <img src="../assets/images/quiz/quiz-check.png" class="choice-check" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <a href="p_04.html" class="btn btn-green disabled">
+              <p>Continue</p>
+              <img class="btn-img" src="../assets/images/reusables/right-arrow.png">
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="../scripts/vendors/jquery.min.js"></script>
+  <script src="../scripts/vendors/tether.min.js"></script>
+  <script src="../scripts/vendors/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/vendors/swiper.min.js"></script>
+  <script src="../scripts/core/base.js"></script>
+  <script src="../scripts/modules/theme-module.js"></script>
+  <script src="../scripts/bootstrapper.js"></script>
+  <!-- endbuild -->
+
+  <!--[if lte IE 9]>
+    <script src="javascripts/non-responsive.js"></script>
+  <![endif]-->
+</body>
+
+</html>

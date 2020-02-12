@@ -1,0 +1,296 @@
+
+.section-promo {
+  position: relative;
+
+  margin: 100px 0;
+  margin-top: 165px;
+
+  &:before,
+  &:after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &:before {
+    right: initial;
+    bottom: 110px;
+    left: -415px;
+
+    margin-top: -18%;
+    width: 922px;
+    height: 983px;
+
+    background-image: url(../assets/images/home/promo-bg-1.png);
+  }
+
+  &:after {
+    right: 125px;
+    bottom: initial;
+    top: 75px;
+    left: initial;
+
+    width: 683px;
+    height: 538px;
+    background-image: url(../assets/images/home/promo-bg-2.png);
+  }
+
+  .flex-container {
+    display: flex;
+
+    .left-side {
+      width: 100%;
+      max-width: 50%;
+      // margin: 0 auto;
+
+      .promo-title {
+        // font-size: 50px;
+        font-weight: bold;
+
+        margin-bottom: 25px;
+
+        width: 100%;
+        max-width: 80%;
+      }
+
+      .promo-text {
+        font-size: 18px;
+        line-height: 30px;
+
+        margin-bottom: 31px;
+        width: 100%;
+        max-width: 75%;
+      }
+    }
+
+    .right-side {
+      background: white;
+      box-shadow: 0px 32px 34px rgba(0,0,0,0.08);
+
+      width: 100%;
+      max-width: 637px;
+      height: 100%;
+      max-height: 426px;
+
+      padding: 10px 50px;
+
+      .access-title {
+        color: $mid-grey;
+        font-size: 25px;
+      }
+
+      .number-lessons {
+        font-size: 140px;
+        color: $peach;
+      }
+
+      .access-text {
+        font-size: 38px;
+        line-height: 42px;
+      }
+
+      .included-text {
+        font-size: 16px;
+        color: $mid-grey;
+
+        padding-top: 15px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  .motivated {
+    &-wrapper {
+      margin-top: 345px;
+      margin-bottom: 200px;
+    }
+
+    &-title {
+      text-align: center;
+
+      margin-bottom: 100px;
+    }
+
+    &-button {
+      margin: 0 auto;
+      margin-top: -35px;
+    }
+
+    &-img {
+      width: 100%;
+      max-width: 1337px;
+    }
+  }
+
+
+  @include respond-to (lg) {
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .left-side {
+        padding-bottom: 70px;
+        margin: 0 auto;
+
+        width: 100%;
+        max-width: 80%;
+
+        .promo-title {
+          // font-size: 40px;
+          text-align: center;
+
+          width: 100%;
+          max-width: 100%;
+        }
+
+        .promo-text {
+          font-size: 16px;
+          text-align: center;
+          line-height: 25px;
+
+          width: 100%;
+          max-width: 100%;
+
+          margin-bottom: 10px;
+        }
+
+        .promo-view {
+          margin: 0 auto;
+        }
+      }
+
+      .right-side {
+        margin: 0 auto;
+        text-align: center;
+
+        .access-title {
+          font-size: 20px;
+        }
+
+        .number-lessons {
+          font-size: 120px;
+        }
+
+        .access-text {
+          font-size: 30px;
+        }
+
+        .included-text {
+          font-size: 13px;
+        }
+      }
+    }
+
+
+  .motivated {
+    &-button {
+      margin-top: 15px;
+    }
+  }
+}
+
+  @include respond-to (md-down) {
+    margin: 50px 0;
+
+    &:before,
+    &:after {
+      opacity: 0.5;
+    }
+
+    &:before {
+      left: -205px;
+      bottom: 490px;
+
+      width: 462px;
+      height: 523px;
+    }
+
+    &:after {
+      top: 355px;
+      right: -95px;
+
+      width: 433px;
+      height: 388px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .left-side {
+        padding-bottom: 70px;
+        margin: 0 auto;
+
+        width: 100%;
+        max-width: 90%;
+
+        .promo-title {
+          font-size: 30px;
+          text-align: center;
+          line-height: 35px;
+
+          width: 100%;
+          max-width: 100%;
+        }
+
+        .promo-text {
+          font-size: 14px;
+          text-align: center;
+          line-height: 25px;
+
+          width: 100%;
+          max-width: 100%;
+
+          margin-bottom: 10px;
+        }
+
+        .promo-view {
+          margin: 0 auto;
+          font-size: 12px;
+        }
+      }
+
+      .right-side {
+        margin: 0 auto;
+        text-align: center;
+
+        .access-title {
+          font-size: 20px;
+        }
+
+        .number-lessons {
+          font-size: 80px;
+        }
+
+        .access-text {
+          font-size: 20px;
+        }
+
+        .included-text {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .motivated {
+      &-wrapper {
+        margin-top: 200px;
+        margin-bottom: 50px;
+      }
+
+      &-button {
+        margin-top: 20px;
+      }
+    }
+  }
+}

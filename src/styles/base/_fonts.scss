@@ -1,0 +1,36 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + "fonts/", "opensans-regular", "opensans-regular");
+
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Light", "TiemposHeadline-Light", 300);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Regular", "TiemposHeadline-Regular", 400);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Medium", "TiemposHeadline-Medium", 500);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Semibold", "TiemposHeadline-Semibold", 600);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Bold", "TiemposHeadline-Bold", 700);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-BoldItalic", "TiemposHeadline-BoldItalic", 700, italic);
+@include font-face($font-tiempos, $base-url + "fonts/", "TiemposHeadline-Black", "TiemposHeadline-Black", 800);
+
+@include font-face($font-helvetica, $base-url + "fonts/", "HelveticaNeue-UltraLight", "HelveticaNeue-UltraLight", 200);
+@include font-face($font-helvetica, $base-url + "fonts/", "HelveticaNeue-Light", "HelveticaNeue-Light", 300);
+@include font-face($font-helvetica, $base-url + "fonts/", "HelveticaNeue", "HelveticaNeue", 400);
+@include font-face($font-helvetica, $base-url + "fonts/", "HelveticaNeue-Medium", "HelveticaNeue-Medium", 500);
+@include font-face($font-helvetica, $base-url + "fonts/", "HelveticaNeue-Bold", "HelveticaNeue-Bold", 700);
+
+@include font-face($font-lato, $base-url + "fonts/", "Lato-Black", "Lato-Black", 900);
+@include font-face($font-lato, $base-url + "fonts/", "Lato-BlackItalic", "Lato-BlackItalic", 900, italic);
+
+@include font-face($font-appetite, $base-url + "fonts/", "Appetite-Regular", "Appetite-Regular", 400);
+
+@include font-face($font-coresans, $base-url + "fonts/", "Core Sans M 65-Bold", "Core Sans M 65-Bold", 700);
+
+@include font-face($font-futura, $base-url + "fonts/", "Futura-BoldItalic", "Futura-BoldItalic", 700);
+
+@include font-face($font-mogra, $base-url + "fonts/", "Mogra-Regular", "Mogra-Regular", 400);
+
+@include font-face($font-carterone, $base-url + "fonts/", "CarterOne-Regular", "CarterOne-Regular", 400);
+
+@include font-face($font-paytoneone, $base-url + "fonts/", "PaytoneOne-Regular", "PaytoneOne-Regular", 400);

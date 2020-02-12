@@ -1,0 +1,158 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 32px;
+  width: 100%;
+  max-width: 346px;
+
+  font-size: 15px;
+  color: $light-grey;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: 0;
+
+  cursor: pointer;
+
+  &-green {
+    background: linear-gradient(270deg, #38ef7d, #11998e);
+  }
+
+  &-reach {
+    background: linear-gradient(270deg, #ff5e62, #ff9966);
+  }
+
+  &-pink {
+    background: linear-gradient(270deg, #f24c7f, #c22b61);
+  }
+
+  &-yellow {
+    background: linear-gradient(270deg, #f8b27e, #f6cd70);
+  }
+
+  &-blue {
+    width: 100%;
+    max-width: 555px;
+    background: linear-gradient(225deg, #5171b9, #3b5899);
+  }
+
+  &-gray {
+    width: 100%;
+    max-width: 150px;
+
+    justify-content: center;
+
+    background-color: $gray;
+  }
+
+  // &-dark {
+  //   color: $text-color;
+
+  //   border-width: 1px;
+  //   border-color: $text-color;
+  //   border-style: solid;
+  // }
+
+  &-white {
+    background: $white;
+    border: 1px solid $text-color;
+
+
+    color: $text-color;
+    font-weight: bold;
+  }
+
+  &-red {
+    background: linear-gradient(270deg, #F65B5B, #E94344);
+  }
+
+  p {
+    letter-spacing: 4px;
+  }
+}
+
+@include respond-to (md-up) {
+  .btn {
+    @include on-event {
+      color: $white;
+    }
+
+    &-green {
+      @include on-event {
+        background: linear-gradient(270deg, #11998e, #11998e);
+      }
+    }
+
+    &-reach {
+      @include on-event {
+        background: linear-gradient(270deg, #ff5e62, #ff5e62);
+      }
+    }
+
+    &-pink {
+      @include on-event {
+        background: linear-gradient(270deg, #c22b61, #c22b61);
+      }
+    }
+
+    &-yellow {
+      @include on-event {
+        background: linear-gradient(270deg, #f8b27e, #f8b27e);
+      }
+    }
+
+    &-blue {
+      @include on-event {
+        background: linear-gradient(225deg, #3b5899, #3b5899);
+      }
+    }
+
+    &-gray {
+      @include on-event {
+        background: $mid-grey;
+        color: $text-color
+      }
+    }
+
+    // &-dark {
+    //   @include on-event {
+    //     background: $mid-grey;
+    //   }
+    // }
+
+    &-white {
+      @include on-event {
+        background: $mid-grey;
+      }
+    }
+
+    &-red {
+      @include on-event {
+        background: linear-gradient(225deg, #E94344, #E94344);
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .btn {
+    padding: 15px 15px;
+  }
+}
+
+@include respond-to (sm-down) {
+  .btn {
+    p {
+      letter-spacing: 0;
+    }
+  }
+}

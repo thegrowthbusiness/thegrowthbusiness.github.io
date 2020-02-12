@@ -1,0 +1,57 @@
+.fbt-wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  .fbt {
+    &-cards {
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        .plus-icon {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &-card {
+      background-color: $white;
+      box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.08);
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      padding: 30px 31px 20px;
+      min-height: 130px;
+
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  .plus-icon {
+    margin-right: 19px;
+    margin-left: 23px;
+  }
+}
+
+@include respond-to(lg-down) {
+  .fbt-wrapper {
+    flex-direction: column;
+
+    .fbt-cards {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .plus-icon {
+      margin-top: 19px;
+      margin-bottom: 23px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}

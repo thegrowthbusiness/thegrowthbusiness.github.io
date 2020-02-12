@@ -1,0 +1,107 @@
+.answer-wrapper {
+  margin: 42px auto 0;
+  width: 100%;
+  max-width: 960px;
+
+  .form-input {
+    padding: 42px 30px;
+
+    color: $text-color;
+
+    border: 1px solid #282828;
+    border-radius: 0;
+
+    &::placeholder {
+      color: #a6a7a9;
+    }
+  }
+
+  .form-check {
+    padding: 0;
+    margin: 30px auto 0;
+
+    text-align: center;
+  }
+
+  .form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .label-check {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+  }
+
+  .custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 27px;
+    height: 27px;
+
+    background-color: $white;
+    border: 1px solid $text-color;
+
+    &:before {
+      position: absolute;
+      top: 3px;
+      left: 4px;
+
+      display: none;
+
+      color: $white;
+    }
+  }
+
+  .label-check:hover input ~ .custom-checkbox {
+    background-color: #ccc;
+  }
+
+  .label-check input:checked ~ .custom-checkbox {
+    background-color: $black;
+  }
+
+  .label-check input:checked ~ .custom-checkbox:before {
+    display: block;
+  }
+
+  label,
+  input {
+    font-size: 18px;
+  }
+
+  .label-text {
+    margin-left: 20px;
+    margin-bottom: 18px;
+  }
+
+  @include respond-to(sm-down) {
+    .form-input {
+      padding: 30px 15px;
+    }
+
+    label,
+    input {
+      font-size: 16px;
+    }
+
+    .label-check {
+      padding-left: 40px;
+
+      text-align: left;
+    }
+
+    .label-text {
+      margin-left: 10px;
+      margin-bottom: 9px;
+    }
+  }
+}

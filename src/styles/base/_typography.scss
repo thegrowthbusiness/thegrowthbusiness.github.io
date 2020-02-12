@@ -1,0 +1,108 @@
+//main: ../main.scss
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font: normal 125% / 1.4 $font-helvetica;
+  color: $text-color;
+}
+
+.font-sm {
+  font-size: 15px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lg {
+  font-size: 38px;
+}
+
+.font-tiempos {
+  font-family: $font-tiempos;
+  font-weight: 800;
+}
+
+.font-appetite {
+  font-family: $font-appetite;
+}
+
+.font-coresans {
+  font-family: $font-coresans;
+}
+
+.font-futura {
+  font-family: $font-futura;
+}
+
+.font-mogra {
+  font-family: $font-mogra;
+}
+
+.font-carterone {
+  font-family: $font-carterone;
+}
+
+.font-paytoneone {
+  font-family: $font-paytoneone;
+}
+
+.title-italic {
+  font-family: $font-tiempos;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.title-text {
+  font-family: $font-tiempos;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.title-text-italic {
+  font-family: $font-tiempos;
+  font-style: italic;
+}
+
+.subtitle-text {
+  font-family: $font-helvetica;
+  font-size: 18px;
+}
+
+.text-height {
+  line-height: 36px;
+}
+
+@include respond-to(lg-down) {
+  .title-text {
+    font-size: 45px;
+  }
+}
+
+@include respond-to(md-down) {
+  .title-text {
+    font-size: 35px;
+  }
+}
+
+@include respond-to(sm-down) {
+  .title-text {
+    font-size: 30px;
+  }
+
+  .subtitle-text {
+    font-size: 16px;
+  }
+}
+
+@include respond-to(xs) {
+  .title-text {
+    font-size: 25px;
+  }
+
+  .subtitle-text {
+    font-size: 14px;
+  }
+}

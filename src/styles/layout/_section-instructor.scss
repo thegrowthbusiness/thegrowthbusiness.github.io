@@ -1,0 +1,320 @@
+.section-instructor {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 114px;
+
+  .instructor-title {
+    padding-top: 21px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    width: 67%;
+
+    line-height: 58px;
+    text-align: center;
+  }
+
+  .instructor-subtitle {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .instructor-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 107px;
+  }
+
+  .first-section {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-top: 18px;
+    width: 100%;
+    max-width: 50%;
+
+    .description p {
+      margin-bottom: 2rem;
+
+      font-size: 18px;
+      line-height: 29px;
+      width: 100%;
+      max-width: 611px;
+    }
+  }
+
+  .instructor-info {
+    display: flex;
+
+    padding-top: 25px;
+    padding-bottom: 62px;
+  }
+
+  .first-instructor,
+  .second-instructor {
+    display: flex;
+
+    width: 100%;
+    max-width: 50%;
+
+    .info-wrapper {
+      padding-top: 10px;
+      padding-left: 8px;
+      padding-right: 19px;
+
+
+      .instructor-name {
+        font-size: 26px;
+        font-weight: 900;
+      }
+
+      .instructor-position {
+        margin-bottom: 0;
+
+        font-size: 16px;
+        color: $mid-grey;
+      }
+    }
+  }
+
+  .second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+
+    // justify-content: center;
+    // overflow: hidden;
+    // text-align: right;
+  }
+
+  .instructor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 85px;
+    padding-right: 26px;
+    padding-bottom: 75px;
+    padding-left: 26px;
+    margin: 15px;
+    width: 441px;
+
+    text-align: center;
+
+    background-color: $white;
+    box-shadow: 0 10px 35px -25px;
+
+    .card-title {
+      padding-top: 60px;
+      padding-bottom: 14px;
+
+      line-height: 41px;
+    }
+
+    .card-subtitle {
+      line-height: 29px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .section-instructor {
+    .first-section {
+      justify-content: center;
+    }
+
+    .section-wrapper {
+      width: 100%;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .first-instructor,
+    .second-instructor {
+      padding-right: 10px;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .section-instructor {
+    padding-top: 60px;
+
+    .instructor-title {
+      width: 100%;
+      padding-bottom: 30px;
+
+      line-height: 1.4;
+    }
+
+    .instructor-wrapper {
+      // flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+
+    .first-section {
+      width: 100%;
+      max-width: 60%;
+      justify-content: center;
+
+      padding-right: 0;
+      padding-top: 0;
+
+      text-align: center;
+
+      .description .description-text {
+        margin: 0 auto;
+        padding: 5px 0;
+      }
+    }
+
+    .second-section {
+      margin: 50px auto 0;
+
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .section-wrapper {
+      // padding-right: 30px;
+      // padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .font-lg {
+        font-size: 35px;
+      }
+    }
+
+    .cards,
+    .third-score-card {
+      .font-lg {
+        font-size: 32px;
+      }
+    }
+
+    .instructor-info {
+      justify-content: space-evenly;
+
+      padding-bottom: 30px;
+    }
+
+    .first-instructor,
+    .second-instructor {
+      width: 100%;
+      max-width: 100%;
+
+      text-align: left;
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .section-instructor {
+    padding-top: 30px;
+    .instructor-title {
+      max-width: 100%;
+    }
+
+    .first-section {
+      max-width: 100%;
+    }
+
+    .instructor-info {
+
+      margin: 0 auto;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .section-instructor {
+    .section-wrapper {
+      .font-lg {
+        font-size: 29px;
+      }
+    }
+
+    .instructor-info {
+      // flex-direction: column;
+      // flex-wrap: wrap;
+      flex-direction: row;
+      padding-top: 0;
+      padding-bottom: 25px;
+    }
+
+    .instructor-wrapper {
+      padding-bottom: 20px;
+    }
+
+    .first-section {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .second-section {
+      margin: 35px auto;
+
+      width: 100%;
+    }
+
+    .first-instructor,
+    .second-instructor {
+      justify-content: center;
+
+      padding-top: 15px;
+      padding-right: 0;
+
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 5px;
+      padding-left: 5px;
+
+      .info-wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+        .instructor-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-instructor {
+    .section-wrapper {
+      .font-lg {
+        font-size: 26px;
+      }
+    }
+
+    .first-section {
+      .description p {
+        font-size: 16px;
+      }
+    }
+
+    .first-instructor,
+    .second-instructor {
+      width: 100%;
+    }
+  }
+}

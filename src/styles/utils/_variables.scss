@@ -1,0 +1,98 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: "Open Sans";
+$font-tiempos: "TiemposHeadline";
+$font-helvetica: "HelveticaNeue";
+$font-lato: "Lato";
+$font-appetite: "Appetite";
+$font-coresans: "Core Sans";
+$font-futura: "Futura";
+$font-mogra: "Mogra";
+$font-carterone: "Carter One";
+$font-paytoneone: "Paytone One";
+
+/// @type List
+$text-font-stack: $font-opensans, "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #151723 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #e50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #ededed !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444444 !default;
+
+/// Dark blue
+/// @type Color
+$dark-blue: rgb(79, 79, 211) !default;
+
+/// Gray
+/// @type Color
+$gray: rgb(161, 161, 161) !default;
+
+/// dark gray
+/// @type Color
+$dark-gray: #151723 !default;
+
+/// peach
+/// @type Color
+$peach: #ff6d63 !default;
+
+/// white
+/// @type Color
+$white: rgb(255, 255, 255) !default;
+
+/// green
+/// @type Color
+$green: #1cb289 !default;
+
+/// reach
+/// @type Color
+$reach: #ff6a63 !default;
+
+/// yellow
+/// @type Color
+$yellow: #f8b67c !default;
+
+/// red
+/// @type Color
+$red: #cb3166 !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "../assets/" !default;
+
+// Custom Colors
+
+$black: #000000;
+$white: #ffffff;
+
+// White
+$white-100: #f7f7f7;
+
+// Gray
+$gray-100: #e7e7e7;

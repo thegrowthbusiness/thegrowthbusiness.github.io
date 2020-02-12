@@ -1,0 +1,301 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  background-color: $dark-gray;
+
+  .footer-wrapper {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    // padding-left: 260px;
+    font-size: 18px;
+
+    .footer-title {
+      color: white;
+      padding-bottom: 28px;
+    }
+
+    .footer-icon {
+      padding-right: 27px;
+      font-size: 30px;
+    }
+
+    .about-space {
+      padding-bottom: 79px;
+    }
+
+    .footer-terms {
+      color: white;
+    }
+
+    .footer-term {
+      color: $mid-grey;
+    }
+  }
+
+  .first-flex {
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .flex-container > div {
+      margin-right: 10px;
+      // width: 19%;
+
+      &.first-box {
+        width: 39%;
+      }
+    }
+
+    .flex-container > div:last-child {
+      margin-right: -12px;
+    }
+  }
+
+  .second-flex {
+    .flex-container {
+      display: flex;
+      // flex-wrap: wrap;
+    }
+
+    .flex-container div:last-child {
+      margin-left: auto;
+    }
+
+    .flex-container > div {
+      margin-right: 73px;
+      margin-left: 10px;
+    }
+
+    .flex-container > div:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .first-box {
+    // width: 100%;
+    // max-width: 565px;
+
+    .wellness-text {
+      width: 100%;
+      max-width: 410px;
+      padding-left: 10px;
+
+      color: $mid-grey;
+    }
+  }
+
+  .footer-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $mid-grey;
+
+    line-height: 36px;
+  }
+
+  .first-row {
+    margin-bottom: 155px;
+  }
+
+  .footer-join {
+    background: linear-gradient(270deg, #FF5E62, #FF9966);
+
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    padding: 38px;
+  }
+}
+
+.footer-sales {
+  padding-top: 63px;
+  padding-bottom: 63px;
+
+  .content-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      padding: 0 10px;
+
+      font-size: 18px;
+      color: $white;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .content-c {
+      opacity: 0.5;
+    }
+
+    .content-made {
+      opacity: 0.2;
+    }
+  }
+
+  .terms-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+  }
+}
+
+@include respond-to (lg-down) {
+  .footer-sales {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .footer-logo {
+      width: 140px;
+    }
+
+    .content-holder {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include respond-to (md) {
+  footer {
+    .footer-wrapper {
+      font-size: 16px;
+    }
+
+    .footer-join {
+      font-size: 16px;
+    }
+  }
+}
+
+@include respond-to (md-down) {
+  footer {
+    .footer-wrapper {
+      .footer-term {
+        font-size: 16px;
+      }
+    }
+
+    .second-flex {
+      .flex-container div:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .footer-sales {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .content-holder {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include respond-to (sm-down) {
+  footer {
+    .first-row {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .first-box {
+      .wellness-text {
+        margin: 0 auto;
+
+        line-height: 1.4;
+      }
+    }
+
+    .first-flex {
+      text-align: center;
+
+      .flex-container > div {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+
+        &.first-box {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer-wrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      font-size: 13px;
+
+      .footer-title {
+        padding-bottom: 5px;
+      }
+
+      .footer-icon:last-child {
+        padding-right: 0;
+      }
+
+      .about-space {
+        padding-bottom: 0;
+      }
+
+      .footer-term {
+        text-align: center;
+      }
+    }
+
+    .footer-join {
+      font-size: 13px;
+    }
+
+    .second-flex .flex-container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      & > div {
+        margin-right: 0;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .footer-sales {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .footer-logo {
+      width: 120px;
+    }
+
+    .content-holder {
+      flex-direction: column;
+
+      p {
+        margin-top: 15px;
+
+        font-size: 14px;
+      }
+    }
+  }
+}

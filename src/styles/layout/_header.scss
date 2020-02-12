@@ -1,0 +1,170 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  padding-top: 33px;
+  width: 100%;
+
+  background-color: transparent;
+
+  .logo-img {
+    padding: 5px 0;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 590px;
+  }
+
+  .link-color {
+    color: $text-color;
+  }
+
+  .header-quiz {
+    margin-top: 10px;
+  }
+
+  .header-button {
+    max-width: 256px;
+
+    p {
+      font-size: 15px;
+      color: $text-color;
+    }
+  }
+}
+
+.header-quiz {
+  padding-top: 35px;
+}
+
+.header-sales {
+  padding-top: 20px;
+  width: 100%;
+
+  background-color: $text-color;
+
+  .header-button {
+    padding: 23px 0;
+    max-width: 130px;
+  }
+
+  .logo-img-black {
+    display: none;
+  }
+}
+
+.section-navbar {
+  &.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    // .logo-img-black {
+    //   display: block;
+    // }
+
+    // .logo-img-white {
+    //   display: none;
+    // }
+
+    // .btn p {
+    //   color: $black;
+    // }
+
+    // .arrow-btn path {
+    //   fill: #000;
+    // }
+  }
+}
+
+.header-fixed {
+  z-index: 1000;
+
+  padding-top: 0;
+
+  background-color: $white;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,.2);
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+@include respond-to(lg-down) {
+  .header {
+    .logo-img {
+      width: 160px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .header-button {
+      padding: 10px 10px;
+      max-width: 190px;
+      margin: 0 auto;
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .header {
+    .logo-img {
+      width: 130px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+      font-size: 14px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .header {
+    background-color: $white;
+
+    .header-button {
+      padding: 25px 0;
+    }
+  }
+
+  .header-quiz {
+    .container {
+      justify-content: center;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .header-sales {
+    .logo-img {
+      width: 140px;
+    }
+
+    .header-button {
+      max-width: 130px;
+    }
+  }
+}

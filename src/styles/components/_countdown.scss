@@ -1,0 +1,38 @@
+.countdown {
+  position: relative;
+  z-index: 1;
+
+  padding: 17px 0;
+
+  background: linear-gradient(270deg, #F8B27E, #F6CD70);
+
+  &-title {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &-time {
+    font-size: 38px;
+    color: $white;
+  }
+
+  .text-wrapper {
+    text-align: center;
+  }
+}
+
+@include respond-to(sm-down) {
+  .countdown {
+    padding: 10px 0;
+
+    &-title {
+      font-size: 16px;
+    }
+
+    &-time {
+      font-size: 30px;
+    }
+  }
+}
